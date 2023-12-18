@@ -52,7 +52,6 @@ My sole purpose for giving a brief introduction to the wonderful world of set th
 NOTE: the inclusion of the finite length condition might seem strange, but it turns out this is actually possible with [strings of infinite length](https://cs.stackexchange.com/questions/119455/does-infinite-length-strings-lead-to-uncountable-languages). Special thanks to Vishal A. for pointing that out.
 1. The collection of all possible strings in the English language with finite length (or any human language, for that matter) is countably infinite. A quick proof: given a random English string (say, "helloworld") we can convert it into a natural number using the [Hexavigesimal numeral system](https://gist.github.com/pinguet62/9817978), which is just base 26. In other words, every possible string can be converted into a unique number, so we simply assign each string to the pigeonhole matching that number.
 2. The real numbers are uncountable (again, see [Cantor](https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument)), and uncountable collections are "bigger" than countable ones, so we will run out of "words" before we run out of numbers.
-3. Therefore, if we tried to name every real number, starting from scratch, it is very possible that we are unable to name pi.
 
 So, do you still want to play our little naming game? 
 ### Conclusion
