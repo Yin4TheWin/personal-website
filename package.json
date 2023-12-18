@@ -6,9 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "date-fns": "^2.30.0",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-awesome-reveal": "^4.2.7",
+    "react-dom": "18.2.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "engines": {
     "node": ">=18"
