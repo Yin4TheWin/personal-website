@@ -53,7 +53,7 @@ My sole purpose for giving a brief introduction to the wonderful world of set th
 2. The real numbers are uncountable (again, see [Cantor](https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument)), and uncountable collections are "bigger" than countable ones, so we will run out of "words" before we run out of numbers.
 3. Therefore, if we tried to name every real number, starting from scratch, it is very possible that we are unable to name pi.
 
-So, do you still want to play? 
+So, do you still want to play our little naming game? 
 ### Conclusion
 If you actually read all the way to the end, thank you! I'm pleasantly surprised. Please send any thoughts, comments, suggestions, or corrections to franklinyin {dot} nj {at} gmail {dot} com. Also, if you would like to learn more about the concepts covered in this post, check out the following:
 1. [Set](https://en.wikipedia.org/wiki/Set_(mathematics)) (I talked about quantities and collections in this article, but mathmeticians usually talk about sets)
