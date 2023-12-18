@@ -6,7 +6,7 @@ desc: 'Or, why pi is unnamed in an alternate universe. An introduction to finite
 tags: 'ramblings'
 ---
 
-Let's play a game: I want you to assign every real number a unique name using the English alphabet. For example, 1 can be "one", maybe 0.244445 is called "I love gambling", and the square root of 2 is called "super duper irrational". If you are successful, you win and I pay you $100. If you are not (i.e., you run out of possible names), you pay me $100. Are you in?
+Let's play a game: I want you to assign every real number a unique name using the English alphabet. For example, 1 can be "one", maybe 0.244445 is called "I love gambling", and the square root of 2 is called "super duper irrational". The only rule is the length of the string must be a number (it could be length 3, 5, or even a Googolplex). If you are successful, you win and I pay you $100. If you are not (i.e., you run out of possible names), you pay me $100. Are you in?
 
 This article aims to help you make an educated answer to that question. We'll talk about finities, infinities, the universe, and demon pigeons. First, of course, some remarks and definitions:
 
@@ -48,8 +48,9 @@ Somehow, there are quantities even "bigger" than countable infinities, and these
 ### Silly Shower Thoughts
 My sole purpose for giving a brief introduction to the wonderful world of set theory here is so I can finally share my stupid theorems with the world. Here's the main one for today:
 
-**It is impossible to name all the real numbers.**
-1. The collection of all possible strings in the English language (or any human language, for that matter) is countably infinite. A quick proof: given a random English string (say, "helloworld") we can convert it into a natural number using the [Hexavigesimal numeral system](https://gist.github.com/pinguet62/9817978), which is just base 26. In other words, every possible string can be converted into a unique number, so we simply assign each string to the pigeonhole matching that number.
+**It is impossible to name all the real numbers with finite length strings.**  
+NOTE: the inclusion of the finite length condition might seem strange, but it turns out this is actually possible with [strings of infinite length](https://cs.stackexchange.com/questions/119455/does-infinite-length-strings-lead-to-uncountable-languages). Special thanks to Vishal A. for pointing that out.
+1. The collection of all possible strings in the English language with finite length (or any human language, for that matter) is countably infinite. A quick proof: given a random English string (say, "helloworld") we can convert it into a natural number using the [Hexavigesimal numeral system](https://gist.github.com/pinguet62/9817978), which is just base 26. In other words, every possible string can be converted into a unique number, so we simply assign each string to the pigeonhole matching that number.
 2. The real numbers are uncountable (again, see [Cantor](https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument)), and uncountable collections are "bigger" than countable ones, so we will run out of "words" before we run out of numbers.
 3. Therefore, if we tried to name every real number, starting from scratch, it is very possible that we are unable to name pi.
 
