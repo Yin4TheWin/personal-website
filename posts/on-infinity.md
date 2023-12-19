@@ -6,7 +6,7 @@ desc: 'Or, why pi is unnamed in an alternate universe. An introduction to finite
 tags: 'ramblings'
 ---
 
-Let's play a game: I want you to assign every real number a unique name using the English alphabet. For example, 1 can be "one", maybe 0.244445 is called "I love gambling", and the square root of 2 is called "super duper irrational". The only rule is the length of the string must be a number (it could be length 3, 5, or even a Googolplex). If you are successful, you win and I pay you $100. If you are not (i.e., you run out of possible names), you pay me $100. Are you in?
+Let's play a game: I want you to assign every real number between 0 and 1 a unique name using the English alphabet. For example, 1 can be "one", maybe 0.12345 is called "I love gambling", and π/4 is called "super duper irrational". The only rule is the length of the string must be a number (it could be length 3, 5, or even a Googolplex). If you are successful, you win and I pay you $100. If you are not (i.e., you run out of possible names), you pay me $100. Are you in?
 
 This article aims to help you make an educated answer to that question. We'll talk about finities, infinities, the universe, and demon pigeons. First, of course, some remarks and definitions:
 

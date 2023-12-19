@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>Franklin Yin</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Hello! I'm Franklin, a student and software engineer. Welcome to my little corner of the Internet!" />
+        <meta name="description" content="Hello! I'm Franklin, a student and software engineer. Welcome to my island on the Internet!" />
       </Head>
       <header className={styles.header}>
       <Fade>
