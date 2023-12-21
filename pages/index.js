@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>Franklin Yin</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Hello! I'm Franklin, a student and software engineer. Welcome to my little corner of the Internet!" />
+        <meta name="description" content="Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!" />
       </Head>
       <header className={styles.header}>
       <Fade>
@@ -34,7 +34,7 @@ export default function Home() {
       </Fade>
       <Zoom delay={800}>
       <section>
-      <p className={utilStyles.headingMd}>Hello! I'm Franklin, a student and software engineer. Welcome to my little corner of the Internet!</p>
+      <p className={utilStyles.headingMd}>Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!</p>
         <p>
           (Check out my {' '}<Link  href="/blog">blog</Link> and {' '}<a target="_blank" rel="noopener noreferrer" href="https://github.com/Yin4TheWin">cool projects</a>. Or, if you must, some{' '}<a href="https://docs.franklinyin.com/">documentation</a>.)
         </p>

@@ -39,12 +39,12 @@ export default function Blog({ postsData }) {
               </section>
             
             <ul className={utilStyles.list}>
-            {postsData.map(({ id, date, title, desc }) => (
+            {postsData.map(({ id, date, title, desc, rev }) => (
                 <li className={utilStyles.listItem} key={id}>
                 <Link href={`/posts/${id}`}>{title}</Link>
                 <br />
                 <small className={`${utilStyles.lightText} ${utilStyles.xs}`}>
-                    <Date dateString={date} />
+                    <Date dateString={date} /> {rev && <>(rev. <Date dateString={rev}/>)</>}
                 </small>
                 <br />
                 <small className={utilStyles.xs}>

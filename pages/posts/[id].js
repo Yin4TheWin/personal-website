@@ -42,7 +42,7 @@ export default function Post({ postData }) {
               </p>
         <hr/>
         <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
+          <Date dateString={postData.date} /> {postData.rev && <>(revised <Date dateString={postData.rev}/>)</>}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

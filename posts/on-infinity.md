@@ -1,7 +1,7 @@
 ---
 title: 'On Infinity'
 date: '2023-12-12'
-rev: '2023-12-17'
+rev: '2023-12-20'
 desc: 'Or, why pi is unnamed in an alternate universe. An introduction to finiteness, infiniteness, and some silly consequences of these notions.'
 tags: 'ramblings'
 ---
