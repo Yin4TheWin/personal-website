@@ -15,31 +15,34 @@ export default function Home() {
         <meta name="description" content="Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!" />
       </Head>
       <header className={styles.header}>
-      <Fade>
+        <Fade>
           <Image
-          priority
-          src="/images/headshot.jpg"
-          className={utilStyles.borderCircle}
-          height={164}
-          width={164}
-          alt="Franklin Yin"
+            priority
+            src="/images/headshot.jpg"
+            className={utilStyles.borderCircle}
+            height={164}
+            width={164}
+            alt="Franklin Yin"
           />
-      </Fade> 
-      <Fade>    
-      <h1 className={utilStyles.heading2Xl}>
-        <Fade delay={500} cascade damping={0.03}>
-          Franklin Yin
         </Fade>
-      </h1>
-      </Fade>
-      <Zoom delay={800}>
-      <section>
-      <p className={utilStyles.headingMd}>Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!</p>
-        <p>
-          (Check out my {' '}<Link  href="/blog">blog</Link> and {' '}<a target="_blank" rel="noopener noreferrer" href="https://github.com/Yin4TheWin">cool projects</a>. Or, if you must, some{' '}<a href="https://docs.franklinyin.com/">documentation</a>.)
-        </p>
-      </section>
-      </Zoom>
+        <Fade>
+          <h1 className={utilStyles.heading2Xl}>
+            <Fade>
+              Franklin Yin
+            </Fade>
+          </h1>
+          <Fade delay={500} cascade damping={0.03}>
+            <p className={utilStyles.quote}>"如果有来生, 我还是会选择和你在一起报税、开洗衣店。"</p>
+          </Fade>
+        </Fade>
+        <Zoom delay={800}>
+          <section>
+            <p className={utilStyles.headingMd}>Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!</p>
+            <p>
+              (Check out my {' '}<Link href="/blog">blog</Link> and {' '}<a target="_blank" rel="noopener noreferrer" href="https://github.com/Yin4TheWin">cool projects</a>. Or, if you must, some{' '}<a href="https://docs.franklinyin.com/">documentation</a>.)
+            </p>
+          </section>
+        </Zoom>
       </header>
     </div>
   );
