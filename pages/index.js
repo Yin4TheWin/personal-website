@@ -5,8 +5,21 @@ import styles from '../styles/home.module.css';
 import Image from 'next/image';
 
 import { Fade, Zoom } from "react-awesome-reveal";
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [randomQuote, setRandomQuote] = useState("");
+
+  useEffect(() => {
+    const quotes = [
+      "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
+      "If the Sun refuses to shine, we will be the Sun.",
+    ];
+    setRandomQuote(
+      quotes[Math.floor(Math.random() * quotes.length)]
+    );
+  }, []);
+
   return (
     <div className={styles.center}>
       <Head>
@@ -27,12 +40,14 @@ export default function Home() {
         </Fade>
         <Fade>
           <h1 className={utilStyles.heading2Xl}>
-            <Fade>
+            <Fade delay={500} cascade damping={0.03}>
               Franklin Yin
             </Fade>
           </h1>
-          <Fade delay={500} cascade damping={0.03}>
-            <p className={utilStyles.quote}>"如果有来生, 我还是会选择和你在一起报税、开洗衣店。"</p>
+          <Fade delay={850}>
+            <p className={utilStyles.quote}>
+              {randomQuote}
+            </p>
           </Fade>
         </Fade>
         <Zoom delay={800}>
