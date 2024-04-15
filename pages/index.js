@@ -14,6 +14,7 @@ export default function Home() {
     const quotes = [
       "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
       "If the Sun refuses to shine, we will be the Sun.",
+      "A ship in harbor is safe, but that is not what ships are built for.",
     ];
     setRandomQuote(
       quotes[Math.floor(Math.random() * quotes.length)]
