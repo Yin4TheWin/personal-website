@@ -39,7 +39,7 @@ export default function Blog({ postsData }) {
           </section>
 
           <ul className={utilStyles.list}>
-            {postsData.filter(({ id, date, title, desc, rev }) => !title.includes("Draft")).map(({ id, date, title, desc, rev }) => (
+            {postsData.filter(({ id, date, title, desc, rev }) => !title.includes("(Draft)")).map(({ id, date, title, desc, rev }) => (
               <li className={utilStyles.listItem} key={id}>
                 <Link href={`/posts/${id}`}>{title}</Link>
                 <br />

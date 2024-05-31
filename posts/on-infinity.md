@@ -1,7 +1,7 @@
 ---
 title: 'On Infinity'
 date: '2023-12-12'
-rev: '2023-12-20'
+rev: '2024-05-31'
 desc: 'Or, why pi is unnamed in an alternate universe. An introduction to finiteness, infiniteness, and some silly consequences of these notions.'
 tags: 'ramblings'
 ---
@@ -33,7 +33,7 @@ Let's start building and see where life takes us. In order to keep track of whic
 
 Well, there's no number which can describe the quantity of pigeonholes I'll build. In order to satisfy every pigeon, I will need to build a pigeonhole for every natural number in existence: pigeonhole #1 for pigeon #-1, pigeonhole #2 for pigeon #-2, ..., on and on, forever and ever; for if I believe I have finished at pigeonhole #N, pigeon #-(N+1) will be knocking at my door.
 
-We have just showed that the negative integers are **countably infinite** using pigeons. A pigeon represents a negative integer, and by assigning it to a pigeonhole we are equivalently "labelling" it with a unique natural number. Of course, each pigeonhole is also uniquely occupied by one pigeon.
+We have just showed that the negative integers are **countably infinite** using pigeons. A pigeon represents a negative integer, and by assigning it to a pigeonhole we are equivalently "labelling" it with a unique natural number (this satisfies condition 1). Of course, each pigeonhole is also uniquely occupied by one pigeon (this satisfies condition 2).
 ### A Second Wave of Demon Pigeons
 Infinities are quite strange: often we find that two quantities, one which seems intuitively "bigger" than the other, are actually the same size! Let's imagine a second scenario where a wave of pigeons flood my backyard, but this time each pigeon is labelled with an integer (so not only are there the same pigeons as before - pigeon #-1, #-2, #-3, ... - we also now have pigeon #0, pigeon #1, pigeon #2, ...). The first wave of pigeons only included negative integers! Surely this second wave is much bigger, right? Can I still house every pigeon using only my natural-number-pigeonholes? Surprisingly, the answer is yes! Of course, I can not assign pigeons the same way as before: pigeon #-N to hole #N, because then the pigeons with a number greater than -1 will have no holes to live in. However, let's consider this new assignment algorithm:  
 
@@ -51,11 +51,12 @@ Using the same examples as before, and plugging into this new algorithm: hole #1
 Somehow, there are quantities even "bigger" than countable infinities, and these are said to be **uncountable**. One famous example: the amount of real numbers between 0 and 1 is uncountable. Yes, there are more numbers between 0 and 1 than there are integers! To see this, we will use a modified proof of [Cantor's Diagonalization Argument](https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument). Imagine Cthulu sends yet another wave of pigeons, this time representing all the real numbers between 0 and 1. Let's assume that I magically assign each pigeon to a unique pigeonhole, as before. The assignment itself does not actually matter. For illustration purposes let's say it looks like this (truncated of course, because it's infinite):
 1. 0.12345...
 2. 0.43523...
-3. 0.69420...
+3. 0.31415...
+4. 0.69420...
 
-So pigeonhole #1 has pigeon #0.12345... living in it. I claim that no matter the living arrangement, I can find you a pigeon which has no home! That pigeon has a number which is constructed as follows: take the first digit after the decimal point of the pigeon living in the first pigeonhole, and add 1 to it. This will be the first digit of my homeless pigeon (so in the above example, the first digit would be 1+1=2). Do the same for the second digit (3+1=4), and the third, (4+1=5) and so on. In general, the Nth digit of this pigeon will be the Nth digit plus 1 of the pigeon living in the Nth pigeonhole.
+So pigeonhole #1 has pigeon #0.12345... living in it. I claim that no matter the living arrangement, I can find you a pigeon which has no home! That pigeon has a number which is constructed as follows: take the first digit after the decimal point of the pigeon living in the first pigeonhole, and add 1 to it. This will be the first digit after the decimal point for my homeless pigeon (so in the above example, the first digit would be 1+1=2). Next, take the second digit after the decimal point of the pigeom living in the *second* pigeon hole, and add 1 to it. This will be the pigeon's *second* digit (3+1=4). Do the same for the third digit, (4+1=5) fourth digit (2+1=3. The number we are constructing is currently 0.2453...), and so on. In general, the Nth digit of this pigeon will be the Nth digit plus 1 of the pigeon living in the Nth pigeonhole.
 
-Do you see why this pigeon has no home? Its number differs from the first pigeon by the tenths place, the second pigeon by the hundredths places, the third by the thousandths, .... That's right, its number differs from every pigeon living in a pigeonhole by at least one digit! Thus it must be homeless, and we have more pigeons than we do pigeonholes.
+Do you see why this pigeon has no home? Its number differs from the first pigeon by the tenths place, the second pigeon by the hundredths places, the third by the thousandths, .... That's right, its number differs from every pigeon living in a pigeonhole by at least one digit! Thus it must be homeless - we can not find a natural number for this pigeon to call home. If you recall, this violates our first condition for something to be countably infinite. However, this quantity of pigeons is certainly not finite, so we say they are **uncountably infinite**. This is the last definition we'll cover here - the size of every collection of objects can be said to be finite, countably infinite, or uncountable.
 ### Silly Shower Thoughts
 My sole purpose for giving a brief introduction to the wonderful world of set theory here is so I can finally share my stupid theorems with the world. Here's the main one for today:
 
