@@ -7,6 +7,10 @@ import Image from 'next/image';
 import { Fade, Zoom } from "react-awesome-reveal";
 import { useEffect, useState } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+
 export default function Home() {
   const [randomQuote, setRandomQuote] = useState("");
 
@@ -16,6 +20,7 @@ export default function Home() {
       "If the Sun refuses to shine, we will be the Sun.",
       "A ship in harbor is safe, but that is not what ships are built for.",
       "🎵 Some dance to remember \\ Some dance to forget 🎵",
+      "We privileged few, who won the lottery of birth against all odds...",
     ];
     const randInd = Math.floor(Math.random() * quotes.length);
     setRandomQuote(
@@ -55,10 +60,24 @@ export default function Home() {
         </Fade>
         <Zoom delay={800}>
           <section>
-            <p className={utilStyles.headingMd}>Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!</p>
+            <p className={utilStyles.headingMd}>Welcome! I'm Franklin, a student and software engineer.</p>
             <p>
               (Check out my {' '}<Link href="/blog">blog</Link> and {' '}<a target="_blank" rel="noopener noreferrer" href="https://github.com/Yin4TheWin">cool projects</a>. Or, if you must, some{' '}<a href="https://docs.franklinyin.com/">documentation</a>.)
             </p>
+            <section className={styles.socialIcons}>
+              <a href="https://www.instagram.com/yinforthewin/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} size="lg" className={styles.icon} />
+              </a>
+              <a href="https://github.com/Yin4TheWin" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} size="lg" className={styles.icon} />
+              </a>
+              <a href="https://www.linkedin.com/in/franklin-yin-67301a1aa/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} size="lg" className={styles.icon} />
+              </a>
+              <a href="mailto:chat@franklinyin.com">
+                <FontAwesomeIcon icon={faEnvelope} size="lg" className={styles.icon} />
+              </a>
+            </section>
           </section>
         </Zoom>
       </header>
