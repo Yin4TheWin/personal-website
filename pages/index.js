@@ -8,7 +8,7 @@ import { Fade, Zoom } from "react-awesome-reveal";
 import { useEffect, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faItchIo, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export default function Home() {
@@ -74,8 +74,8 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/franklin-yin-67301a1aa/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} size="lg" className={styles.icon} />
               </a>
-              <a href="mailto:chat@franklinyin.com">
-                <FontAwesomeIcon icon={faEnvelope} size="lg" className={styles.icon} />
+              <a href="https://yin4thewin.itch.io/quixoticquest" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faItchIo} size="lg" className={styles.icon} />
               </a>
             </section>
           </section>
