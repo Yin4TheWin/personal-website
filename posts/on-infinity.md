@@ -55,7 +55,7 @@ Somehow, there are quantities even "bigger" than countable infinities, and these
 | 1          | 0.12345... |
 | 2          | 0.43523... |
 | 3          | 0.31415... |
-| 4          | 0.12345... |
+| 4          | 0.42069... |
 
 So pigeonhole #1 has pigeon #0.12345... living in it. I claim that no matter the living arrangement, I can find you a pigeon which has no home! That pigeon has a number which is constructed as follows: take the first digit after the decimal point of the pigeon living in the first pigeonhole, and add 1 to it. This will be the first digit after the decimal point for my homeless pigeon (so in the above example, the first digit would be 1+1=2). Next, take the second digit after the decimal point of the pigeom living in the *second* pigeon hole, and add 1 to it. This will be the pigeon's *second* digit (3+1=4). Do the same for the third digit, (4+1=5) fourth digit (2+1=3. The number we are constructing is currently 0.2453...), and so on. In general, the Nth digit of this pigeon will be the Nth digit plus 1 of the pigeon living in the Nth pigeonhole.
 
