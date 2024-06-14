@@ -1,4 +1,4 @@
-html{
+html {
   background-image: url("../public/images/bg.png");
   background-size: 45% auto;
   margin: 0;
@@ -7,7 +7,7 @@ html{
   font-size: 20px;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -27,4 +27,74 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+pre>code {
+  display: block;
+  background: #2d2d2d;
+  color: #cccccc;
+  padding: 1.33em;
+  border-radius: 0.33em;
+}
+
+.hljs-keyword {
+  color: #cc99cd;
+  /* Purple */
+  font-weight: bold;
+}
+
+.hljs-string {
+  color: #f08d49;
+  /* Orange */
+}
+
+.hljs-number {
+  color: #f08d49;
+  /* Orange */
+}
+
+.hljs-comment {
+  color: #999999;
+  /* Gray */
+  font-style: italic;
+}
+
+.hljs-title {
+  color: #6699cc;
+  /* Blue */
+}
+
+.hljs-params {
+  color: #f08d49;
+  /* Orange */
+}
+
+.hljs-variable {
+  color: #66cc99;
+  /* Green */
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  background-color: #f9f9f9;
 }
