@@ -17,10 +17,10 @@ export default function Home() {
   useEffect(() => {
     const quotes = [
       "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
+      "🎵 怎么爱你都不嫌多 🎵",
       "If the Sun refuses to shine, we will be the Sun.",
       "A ship in harbor is safe, but that is not what ships are built for.",
-      "🎵 Some dance to remember \\ Some dance to forget 🎵",
-      "We privileged few, who won the lottery of birth against all odds...",
+      "My whiskey neat, my coffee black, and my bed at three",
     ];
     const randInd = Math.floor(Math.random() * quotes.length);
     setRandomQuote(
