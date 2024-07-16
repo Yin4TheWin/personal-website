@@ -19,8 +19,8 @@ export default function Home() {
       "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
       "🎵 怎么爱你都不嫌多 🎵",
       "If the Sun refuses to shine, we will be the Sun.",
-      "A ship in harbor is safe, but that is not what ships are built for.",
       "My whiskey neat, my coffee black, and my bed at three",
+      "I hold it true, whate'er befall; I feel it, when I sorrow most...",
     ];
     const randInd = Math.floor(Math.random() * quotes.length);
     setRandomQuote(
