@@ -16,6 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     const quotes = [
+      "Volo no fugia!",
       "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
       "🎵 怎么爱你都不嫌多 🎵",
       "If the Sun refuses to shine, we will be the Sun.",
