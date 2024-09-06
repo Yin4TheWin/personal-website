@@ -20,6 +20,7 @@ export default function Home() {
       "Be glad of thy chosen path. It is, after all, thine.",
       "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
       "🎵 怎么爱你都不嫌多 🎵",
+      "有你相伴这一路 多么多么自由",
       "If the Sun refuses to shine, we will be the Sun.",
       "My whiskey neat, my coffee black, and my bed at three",
       "I hold it true, whate'er befall; I feel it, when I sorrow most...",
