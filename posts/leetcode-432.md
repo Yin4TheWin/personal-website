@@ -32,5 +32,39 @@ class Solution:
 ```
 ### #2 Maximum Amount of Money Robot Can Earn
 ![](/images/011525/2stmnt.png)
+#### Solution
+Here's a [link to my original submission](https://leetcode.com/contest/weekly-contest-432/submissions/detail/1505684466/).
 ```python
+class Solution:
+    def maximumAmount(self, coins: List[List[int]]) -> int:
+        # A
+        self.m = len(coins)
+        self.n = len(coins[0])
+
+        # B
+        @lru_cache(maxsize=None)
+        def dp(i, j, neut):
+            # C
+            if i >= self.m or j >= self.n:
+                return float('-inf')
+            if i == self.m - 1 and j == self.n - 1:
+                if coins[i][j] < 0 and neut > 0:
+                    return 0
+                return coins[i][j]
+
+            # D
+            modifier = coins[i][j]
+            ans = []
+            # E
+            if modifier < 0 and neut > 0:
+                ans.append(dp(i+1, j, neut - 1))
+                ans.append(dp(i, j+1, neut - 1))
+            # F
+            ans.append(dp(i+1, j, neut) + modifier)
+            ans.append(dp(i, j+1, neut) + modifier)
+            # G
+            return max(ans)
+
+        # H    
+        return dp(0, 0, 2)
 ```
