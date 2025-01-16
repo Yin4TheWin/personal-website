@@ -2,10 +2,17 @@
 title: 'Leetcode Weekly Breakdown #432 - Knighthood!'
 date: '2025-01-15'
 desc: 'Intuition, code, and explanations for #1 Zigzag Grid Traversal with Skip and #2 Maximum Amount of Money Robot Can Earn'
-tags: 'programming'
+tags: 'all,programming'
 ---
+After months of practice I've finally achieved Knight status on Leetcode! (top 25% among players ranked 1600+, ~top 5% sitewide)
 
 ![](/images/011525/knight.png)
+
+I know it's not much, and I've still got a long way to go, but the badge serves as proof to me that I'm making progress. It also means that I now feel competent enough to share my intuitions, solutions, and thought processes here in the hopes that they might be able to help someone else.
+
+### Why you should read this
+because
+
 ### #1 Zigzag Grid Traversal
 ![](/images/011525/1stmnt.png)
 #### Solution
@@ -31,6 +38,7 @@ class Solution:
         return ans
 ```
 ### #2 Maximum Amount of Money Robot Can Earn
+###### probably trillions, have you seen veo2?
 ![](/images/011525/2stmnt.png)
 #### Solution
 Here's a [link to my original submission](https://leetcode.com/contest/weekly-contest-432/submissions/detail/1505684466/).

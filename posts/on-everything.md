@@ -2,7 +2,7 @@
 title: 'On Everything - Draft'
 date: '2024-05-31'
 desc: '(UNFINISHED) An exploration of universes containing anything and everything, and a useful langauge to describe them.'
-tags: 'math, ramblings'
+tags: 'all,math,drafts'
 ---
 ⚠️ **Note**: Below is a rough outline/some notes on a topic I've wanted to cover for a while now, and I'm in the process of converting it into something readable and beginner-friendly. The full version will be released all at once and soon-ish; I'm posting the notes now to hold myself accountable. Thanks!
 

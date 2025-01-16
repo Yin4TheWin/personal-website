@@ -32,8 +32,8 @@ export default function Blog({ postsData }) {
               <Link href="/">Back to home</Link> | <Link href={`/posts/${randomPost}`}>Random post</Link> |
               Filter by: {' '}
               <select name="cars" id="cars">
-                <option value="All Posts">All Posts</option>
-                <option value="Ramblings">Ramblings</option>
+                <option value="all">All Posts</option>
+                <option value="select">Select (My Best Works)</option>
               </select>
             </p>
           </section>
