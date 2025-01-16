@@ -86,6 +86,16 @@ Admittedly, there are many optimizations that can be made to this implementation
 *This is a backtracking/dynamic programming problem, so if you're not already familiar with these topics, I recommend you check out a resource like [Neetcode's roadmap](https://neetcode.io/roadmap). That's how I  learned these concepts!*
 
 I've always thought of DP as a subset of backtracking problems. That is, if the answer to your backtracking problem depends on smaller instances of the same problem, then you can benefit from memoization!
+
+I have a 3-step thought process for solving these problems:
+1. **Representation** - what is the least amount of information, or state, we need to solve this problem? For example, the least amount of state we need to find the Nth finbonacci number is just the number N itself.
+2. **Implementation** - Define a function `f` that represents the solution to your problem for a given state. Then figure out how  `f` can recursively solve the problem by breaking it into smaller subproblems. For instance, for Fibonacci numbers, the transition is `f(N)=f(N−1)+f(N−2)`. Essentially, this step is about defining how the current state relates to smaller states.
+3. **Base Case** - how can we make sure this function doesn't run forever?
+
+Let's go through these steps now for this problem:
+1. **Representation:** We always need to know where the robot is because that determine what our next possible steps are. Thus, our state at least needs to have the current coordinates (i, j) of the robot. We also need to remember how many more times the robot can use its special ability to neutralize robbers, because if the power is used twice it can no longer be used (changes our decision tree). Lastly, remember that the goal of the question is return the maximum amount of money the robot can collect while traversing the maze. Does this mean we need to keep track of the robot's current value in the state as well? (The answer is no. Can you think of why?)
+2. **Implementation:** We've said that the problem can be represented as `dp(i, j, neut)` where `neut` is the number of neutralizations remaining. For each state `(i, j, neut)` the possible moves are `(i+1, j, neut)`, `(i, j+1, neut)`. If the cell[i][j] has a robber, the moves `(i+1, j, neut - 1)` and `(i, j+1, neut - 1)` are also possible.
+3. **Base Case:** We should essentially have two base cases - one where the robot reachs the bottom right corner, and one where it does not but goes out of bounds instead. Think about how these two cases should be handled differently.
 #### Solution
 Here's a [link to my original submission](https://leetcode.com/contest/weekly-contest-432/submissions/detail/1505684466/).
 ```python
@@ -122,3 +132,15 @@ class Solution:
         # H    
         return dp(0, 0, 2)
 ```
+- **A:** Store the dimensions of the grid (`m` and `n`) to simplify boundary checks.  
+- **B:** Define a memoized recursive function `dp(i, j, neut)` . This function computes the maximum coins the robot can collect starting from cell `(i, j)` with `neut` remaining neutralizations available. The Python decorator `@lru_cache` does the memoization for us, it essentially creates a memoization dictionary using the arguemtns of `dp()` as values. `maxsize=None` means there is no limit to the size of the cahce.
+- **C:** **Base Cases:**
+  - If the robot steps out of bounds (`i >= m` or `j >= n`), return negative infinity (`-inf`) because it's an invalid state.
+  - If the robot reaches the bottom-right cell `(m-1, n-1)`:
+    - Check if the cell contains a robber (`coins[i][j] < 0`) and if neutralizations are available (`neut > 0`). If so, the robot neutralizes the robber, resulting in `0` coins from this cell.
+    - Otherwise, return the value of the cell (`coins[i][j]`).  
+- **D:** Initialize `modifier` as the value of the current cell (`coins[i][j]`). This will be added to the robot's total unless it's neutralized. Also initalize `ans`: this will contain the values of the robot after it takes every possible decision. The idea is to return `max(ans)` at the end, representing the best possible choice.
+- **E:** If the current cell contains a robber (`modifier < 0`) and the robot still has neutralizations available (`neut > 0`), simulate neutralizing the robber. In this case, calculate potential profits from moving right (`dp(i, j+1, neut-1)`) and moving down (`dp(i+1, j, neut-1)`) without deducting coins for the robber.  
+- **F:** It may be the case that the value at this cell is positive or that we do not want to neutralize this robber. Thus, regardless of whether the robber is neutralized, calculate profits as if we are forced to pick up the value at this cell.  
+- **G:** Return the maximum value among all possible moves (`max(ans)`). This ensures the robot takes the optimal path.  
+- **H:** Start the computation from the top-left corner `(0, 0)` with 2 neutralizations available. The result is the maximum profit the robot can collect.
