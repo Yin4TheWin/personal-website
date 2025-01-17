@@ -44,7 +44,6 @@ export default function Blog({ postsData }) {
                   <option value="select">Selected Works</option>
                   <option value="math">Math</option>
                   <option value="programming">Programming</option>
-                  <option value="drafts">Drafts</option>
                 </select>
                 <span className={utilStyles.selectArrow}>▼</span>
             </span> 
