@@ -13,7 +13,6 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export default function Home() {
   const [randomQuote, setRandomQuote] = useState("");
-
   useEffect(() => {
     const quotes = [
       "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving.",
@@ -42,7 +41,7 @@ export default function Home() {
         <Fade>
           <Image
             priority
-            src="/images/headshot.jpg"
+            src="/images/headshot.jpeg"
             className={utilStyles.borderCircle}
             height={164}
             width={164}
