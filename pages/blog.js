@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -19,6 +21,8 @@ export async function getStaticProps() {
 
 export default function Blog({ postsData }) {
   const randomPost = postsData[Math.floor(Math.random() * postsData.length)].id;
+  const [filter, setFilter] = useState("all");
+
   return (
     <Layout>
       <Head>
@@ -31,15 +35,24 @@ export default function Blog({ postsData }) {
             <p className={utilStyles.xs}>
               <Link href="/">Back to home</Link> | <Link href={`/posts/${randomPost}`}>Random post</Link> |
               Filter by: {' '}
-              <select name="cars" id="cars">
-                <option value="All Posts">All Posts</option>
-                <option value="Ramblings">Ramblings</option>
-              </select>
+              <span className={utilStyles.selectContainer}>
+                <select
+                  className={utilStyles.selectBox}
+                  onChange={(e)=>{setFilter(e.target.value)}}
+                >
+                  <option value="all">All Posts</option>
+                  <option value="select">Selected Works</option>
+                  <option value="math">Math</option>
+                  <option value="programming">Programming</option>
+                </select>
+                <span className={utilStyles.selectArrow}>▼</span>
+            </span> 
             </p>
+            
           </section>
 
           <ul className={utilStyles.list}>
-            {postsData.filter(({ id, date, title, desc, rev }) => !title.includes("(Draft)")).map(({ id, date, title, desc, rev }) => (
+            {postsData.filter(({ id, date, title, desc, rev, tags}) => tags.includes(filter)).map(({ id, date, title, desc, rev }) => (
               <li className={utilStyles.listItem} key={id}>
                 <Link href={`/posts/${id}`}>{title}</Link>
                 <br />
