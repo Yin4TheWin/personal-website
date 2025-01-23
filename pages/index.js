@@ -42,10 +42,10 @@ export default function Home() {
         <Fade>
           <Image
             priority
-            src="/images/headshot.jpg"
+            src="/images/headshot2.jpg"
             className={utilStyles.borderCircle}
-            height={164}
-            width={164}
+            height={174}
+            width={174}
             alt="Franklin Yin"
           />
         </Fade>

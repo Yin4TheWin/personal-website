@@ -34,7 +34,7 @@ That was a lot! Take a moment to convince yourself that you understand these ter
 
 ## Proofs, Experiments, Same Difference
 
-Mathemticians are like normal people - they love being right - except they'll prove they're right using the indivisible, unshakeable truths of the universe 😭. Let's learn how to do some of that here, using the terminology we just picked up. We'll go over two types of proofs: subset proofs and equality proofs.
+Mathematicians are like normal people - they love being right - except they'll prove they're right using the indivisible, unshakeable truths of the universe 😭. Let's learn how to do some of that here, using the terminology we just picked up. We'll go over two types of proofs: subset proofs and equality proofs.
 
 ### Subset Proofs - Ditto! ![Ditto Icon (Pokemon)](https://www.serebii.net/pokedex-dp/icon/132.gif)
 How can we prove that a Universe *A* is a subset of Universe *B*? Sure, we can look at **every single element** in A and check if it exists in B, but what if A has 1 billion elements? We don't want to be stuck here for 32 years! Thankfully, our Pokémon friend Ditto can help us out. 
