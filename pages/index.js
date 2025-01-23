@@ -13,7 +13,6 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export default function Home() {
   const [randomQuote, setRandomQuote] = useState("");
-
   useEffect(() => {
     const quotes = [
       "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving.",
@@ -22,7 +21,7 @@ export default function Home() {
       "🎵 怎么爱你都不嫌多 🎵",
       "有你相伴这一路 多么多么自由",
       "If the Sun refuses to shine, we will be the Sun.",
-      "My whiskey neat, my coffee black, and my bed at three",
+      "Whiskey neat, Coffee black, Bed at three",
       "I hold it true, whate'er befall; I feel it, when I sorrow most...",
     ];
     const randInd = Math.floor(Math.random() * quotes.length);
@@ -44,8 +43,8 @@ export default function Home() {
             priority
             src="/images/headshot2.jpg"
             className={utilStyles.borderCircle}
-            height={174}
-            width={174}
+            height={184}
+            width={184}
             alt="Franklin Yin"
           />
         </Fade>
