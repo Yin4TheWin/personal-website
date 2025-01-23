@@ -36,10 +36,10 @@ export default function Home() {
         <title>Franklin Yin</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!" />
-        <meta name="og:image" content="/images/headshot2.jpg"/>
+        <meta name="og:image" content="/images/headshot2.jpg" />
       </Head>
       <header className={styles.header}>
-        <Fade>
+        <Fade triggerOnce>
           <Image
             priority
             src="/images/headshot2.jpg"
@@ -49,19 +49,19 @@ export default function Home() {
             alt="Franklin Yin"
           />
         </Fade>
-        <Fade>
+        <Fade triggerOnce>
           <h1 className={utilStyles.heading2Xl}>
-            <Fade delay={500} cascade damping={0.03}>
+            <Fade delay={500} cascade damping={0.03} triggerOnce>
               Franklin Yin
             </Fade>
           </h1>
-          <Fade delay={850}>
+          <Fade delay={850} triggerOnce>
             <p className={utilStyles.quote}>
               {randomQuote}
             </p>
           </Fade>
         </Fade>
-        <Zoom delay={800}>
+        <Zoom delay={800} triggerOnce>
           <section>
             <p className={utilStyles.headingMd}>Welcome! I'm Franklin, a student and software engineer.</p>
             <p>
