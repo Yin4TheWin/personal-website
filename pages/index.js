@@ -82,7 +82,7 @@ export default function Home() {
               </li>
               <li>
                 <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
-                <span>Georiga Tech, M.S. (2024 - )</span>
+                <span>Georgia Tech, M.S. (2024 - )</span>
               </li>
               <li>
                 <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
