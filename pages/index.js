@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faBook, faGamepad, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const [randomQuote, setRandomQuote] = useState("");
@@ -62,25 +63,51 @@ export default function Home() {
           </Fade>
         </Fade>
         <Zoom delay={800} triggerOnce>
-          <section>
-            <p className={utilStyles.headingMd}>Welcome! I'm Franklin, a student and software engineer.</p>
-            <p>
-              (Check out my {' '}<Link href="/blog">blog</Link> and {' '}<a target="_blank" rel="noopener noreferrer" href="https://github.com/Yin4TheWin">cool projects</a>. Or, if you must, some{' '}<a href="https://docs.franklinyin.com/">documentation</a>.)
-            </p>
-            <section className={styles.socialIcons}>
-              <a href="https://www.instagram.com/yinforthewin/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faInstagram} size="lg" className={styles.icon} />
-              </a>
-              <a href="https://github.com/Yin4TheWin" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} size="lg" className={styles.icon} />
-              </a>
-              <a href="https://www.linkedin.com/in/franklin-yin-67301a1aa/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="lg" className={styles.icon} />
-              </a>
-              <a href="mailto:chat@franklinyin.com">
-                <FontAwesomeIcon icon={faEnvelope} size="lg" className={styles.icon} />
-              </a>
-            </section>
+        <p className={utilStyles.headingMd}>Welcome! I'm Franklin, a student and software engineer.</p>
+          <main className={styles.panelContainer}>
+            <div className={styles.navigationPanel}>
+              <h2>Quick Links</h2>
+              <ul>
+                <li><Link href="/blog">My Blog</Link></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Yin4TheWin">Cool Projects</a></li>
+                <li><a href="https://docs.franklinyin.com/">Documentation</a></li>
+              </ul>
+            </div>
+            <div className={styles.aboutPanel}>
+              <h2>About</h2>
+              <ul className={styles.aboutList}>
+              <li>
+                <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
+                <span>Rutgers University, B.S. ✅</span>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
+                <span>Georiga Tech, M.S. (2024 - )</span>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
+                <span>Currently Reading: Nothing Yet!</span>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faGamepad} size="lg" className={styles.icon} />
+                <span>Currently Playing: Outer Wilds</span>
+              </li>
+            </ul>
+            </div>
+          </main>
+          <section className={styles.socialIcons}>
+            <a href="https://www.instagram.com/yinforthewin/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} size="lg" className={styles.icon} />
+            </a>
+            <a href="https://github.com/Yin4TheWin" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} size="lg" className={styles.icon} />
+            </a>
+            <a href="https://www.linkedin.com/in/franklin-yin-67301a1aa/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} size="lg" className={styles.icon} />
+            </a>
+            <a href="mailto:chat@franklinyin.com">
+              <FontAwesomeIcon icon={faEnvelope} size="lg" className={styles.icon} />
+            </a>
           </section>
         </Zoom>
       </header>
