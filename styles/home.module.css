@@ -67,6 +67,9 @@
 }
 
 @media (max-width: 768px) {
+  .center {
+    margin: 1rem;
+  }
   .panelContainer {
     flex-direction: column;
     gap: 20px
