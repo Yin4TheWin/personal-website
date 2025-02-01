@@ -84,6 +84,9 @@
   .center {
     margin: 0rem 4rem;
   }
+  .panelContainer {
+    min-width: 65vw;
+  }
 }
 
 @media (min-width: 992px) {

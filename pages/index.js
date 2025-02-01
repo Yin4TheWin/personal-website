@@ -20,10 +20,11 @@ export default function Home() {
       "Be glad of thy chosen path. It is, after all, thine.",
       "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
       "🎵 怎么爱你都不嫌多 🎵",
-      "有你相伴这一路 多么多么自由",
+      "🎵 有你陪喝醉了又何妨 🎵",
       "If the Sun refuses to shine, we will be the Sun.",
       "Whiskey neat, Coffee black, Bed at three",
       "I hold it true, whate'er befall; I feel it, when I sorrow most...",
+      "A shared-memory multiprocessor is a great machine as long as you don’t share memory"
     ];
     const randInd = Math.floor(Math.random() * quotes.length);
     setRandomQuote(
