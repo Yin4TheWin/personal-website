@@ -64,7 +64,7 @@ export default function Home() {
           </Fade>
         </Fade>
         <Zoom delay={800} triggerOnce>
-        <p className={utilStyles.headingMd}>Welcome! I'm Franklin, a student and software engineer.</p>
+          <p className={utilStyles.headingMd}>Welcome! I'm Franklin, a student and software engineer.</p>
           <main className={styles.panelContainer}>
             <div className={styles.navigationPanel}>
               <h2>Quick Links</h2>
@@ -77,23 +77,23 @@ export default function Home() {
             <div className={styles.aboutPanel}>
               <h2>About</h2>
               <ul className={styles.aboutList}>
-              <li>
-                <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
-                <span>Rutgers University, B.S. ✅</span>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
-                <span>Georgia Tech, M.S. (2024 - )</span>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
-                <span>Currently Reading: Nothing Yet!</span>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faGamepad} size="lg" className={styles.icon} />
-                <span>Currently Playing: Outer Wilds</span>
-              </li>
-            </ul>
+                <li>
+                  <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
+                  <span>Rutgers University, B.S. ✅</span>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
+                  <span>Georgia Tech, M.S. (2024 - )</span>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
+                  <span>Currently Reading: <i>The Three Body Problem</i>, by Cixin Liu (trans. Ken Liu)</span>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faGamepad} size="lg" className={styles.icon} />
+                  <span>Currently Playing: Outer Wilds</span>
+                </li>
+              </ul>
             </div>
           </main>
           <section className={styles.socialIcons}>
