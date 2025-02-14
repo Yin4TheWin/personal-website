@@ -1,7 +1,7 @@
 ---
 title: 'On Everything'
 date: '2024-05-31'
-rev: '2025-01-17'
+rev: '2025-02-13'
 desc: 'An exploration of universes containing anything and everything, and a useful language to describe them.'
 tags: 'all,math,select'
 ---
