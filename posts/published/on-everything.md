@@ -2,7 +2,7 @@
 title: 'On Everything'
 date: '2024-05-31'
 rev: '2025-01-17'
-desc: 'An exploration of universes containing anything and everything, and a useful langauge to describe them.'
+desc: 'An exploration of universes containing anything and everything, and a useful language to describe them.'
 tags: 'all,math,select'
 ---
 Imagine a universe that contains only apples, oranges, mangoes, and big blue bananas. For simplicity, we'll call this the **Fruit Universe**. Now, imagine another universe containing T-Rexes, Velociraptors, Stegosauruses, and big blue bananas. For simplicity, we'll call this the **Prehistoric Universe**. Suppose you, a young universologist, managed to capture these two universes in a bottle. What might you learn from studying them together? Which items can only exist in one universe? Which items may exist in both?
@@ -69,7 +69,7 @@ Congratulations, you did it!
 
 Sets (or universes, as we’ve called them) are one of the most elegant and versatile tools in mathematics. By understanding how they work, we gain a language that lets us describe anything—from fruit to numbers to abstract concepts. Whether you’re organizing your pantry or exploring the infinite, sets will always have your back.
 
-If you've read all the way to the end, thank you! Please [feel free to reach out](chat@franklinyin.com) if you have any thoughts, questions, or comments. And if you’d like to dive deeper into these topics, check out:
+If you've read all the way to the end, thank you! Please [feel free to reach out](mailto:chat@franklinyin.com) if you have any thoughts, questions, or comments. And if you’d like to dive deeper into these topics, check out:
 
 1. [Set Theory](https://en.wikipedia.org/wiki/Set_theory): The foundation of this article and much of modern mathematics.
 2. [Cardinality](https://en.wikipedia.org/wiki/Cardinality): How mathematicians measure the “size” of a set.
