@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faBook, faGamepad, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faBriefcase, faGraduationCap, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const [randomQuote, setRandomQuote] = useState("");
@@ -78,8 +78,12 @@ export default function Home() {
               <h2>About</h2>
               <ul className={styles.aboutList}>
                 <li>
-                  <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
-                  <span>Rutgers University, B.S. ✅</span>
+                  <FontAwesomeIcon icon={faLocationDot} size="lg" className={styles.icon} />
+                  <span>Mountain View, CA</span>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faBriefcase} size="lg" className={styles.icon} />
+                  <span>Software Engineer @ Google</span>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
@@ -88,10 +92,6 @@ export default function Home() {
                 <li>
                   <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
                   <span>Currently Reading: <i>The Three Body Problem</i>, by Cixin Liu (trans. Ken Liu)</span>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faGamepad} size="lg" className={styles.icon} />
-                  <span>Currently Playing: Outer Wilds</span>
                 </li>
               </ul>
             </div>
