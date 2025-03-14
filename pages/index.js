@@ -87,8 +87,7 @@ export default function Home() {
                   <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
                   <span>Georgia Tech, M.S. (2024 - )</span>
                 </li>
-              <li>
-                  <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
+                <li>
                   <span>Rutgers University, B.S. (2020 - 2024)</span>
                 </li>
                 <li>
