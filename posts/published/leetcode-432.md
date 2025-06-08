@@ -1,6 +1,7 @@
 ---
-title: 'Leetcode Weekly Breakdown #432 - Knighthood!'
+title: 'Leetcode Weekly Breakdown #432'
 date: '2025-01-15'
+rev: '2025-03-13'
 desc: 'Intuition, code, and explanations for #1 (Zigzag Grid Traversal with Skip) and #2 (Maximum Amount of Money Robot Can Earn)'
 tags: 'all,programming'
 ---

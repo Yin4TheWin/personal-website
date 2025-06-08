@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faBook, faGamepad, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faBriefcase, faGraduationCap, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const [randomQuote, setRandomQuote] = useState("");
@@ -19,12 +19,10 @@ export default function Home() {
       "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving.",
       "Be glad of thy chosen path. It is, after all, thine.",
       "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
-      "🎵 怎么爱你都不嫌多 🎵",
+      "Deep roots are not reached by the frost",
       "🎵 有你陪喝醉了又何妨 🎵",
       "If the Sun refuses to shine, we will be the Sun.",
       "Whiskey neat, Coffee black, Bed at three",
-      "I hold it true, whate'er befall; I feel it, when I sorrow most...",
-      "A shared-memory multiprocessor is a great machine as long as you don’t share memory"
     ];
     const randInd = Math.floor(Math.random() * quotes.length);
     setRandomQuote(
@@ -78,20 +76,24 @@ export default function Home() {
               <h2>About</h2>
               <ul className={styles.aboutList}>
                 <li>
-                  <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
-                  <span>Rutgers University, B.S. ✅</span>
+                  <FontAwesomeIcon icon={faLocationDot} size="lg" className={styles.icon} />
+                  <span>Mountain View, CA</span>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faBriefcase} size="lg" className={styles.icon} />
+                  <span>Software Engineer @ Google</span>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
                   <span>Georgia Tech, M.S. (2024 - )</span>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
-                  <span>Currently Reading: <i>The Three Body Problem</i>, by Cixin Liu (trans. Ken Liu)</span>
+                  <FontAwesomeIcon icon={faGraduationCap} size="lg" className={styles.icon} />
+                  <span>Rutgers University, B.S. ✅</span>
                 </li>
                 <li>
-                  <FontAwesomeIcon icon={faGamepad} size="lg" className={styles.icon} />
-                  <span>Currently Playing: <i>Clair Obscur: Expedition 33</i></span>
+                  <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
+                  <span>Currently Reading: <i>The Three Body Problem</i>, by Cixin Liu (trans. Ken Liu)</span>
                 </li>
               </ul>
             </div>
