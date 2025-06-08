@@ -91,7 +91,7 @@ export default function Home() {
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faGamepad} size="lg" className={styles.icon} />
-                  <span>Currently Playing: Outer Wilds</span>
+                  <span>Currently Playing: <i>Clair Obscur: Expedition 33</i></span>
                 </li>
               </ul>
             </div>
