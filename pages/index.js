@@ -93,7 +93,7 @@ export default function Home() {
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
-                  <span>Currently Reading: <i>The Three Body Problem</i>, by Cixin Liu (trans. Ken Liu)</span>
+                  <span>Currently Reading: <i>Careless People</i>, by Sarah Wynn-Williams</span>
                 </li>
               </ul>
             </div>
