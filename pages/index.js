@@ -67,7 +67,7 @@ export default function Home() {
                 {quotes[randomQuoteIndex]}
               </p>
               <button className={styles.reloadButton} onClick={getNewQuote}>
-                <FontAwesomeIcon icon={faSync} />
+                <FontAwesomeIcon icon={faSync} size="lg"/>
               </button>
             </div>
           </Fade>
