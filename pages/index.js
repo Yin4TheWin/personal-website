@@ -10,24 +10,30 @@ import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faBook, faBriefcase, faGraduationCap, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faBriefcase, faGraduationCap, faLocationDot, faSync } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
-  const [randomQuote, setRandomQuote] = useState("");
-  useEffect(() => {
-    const quotes = [
-      "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving.",
-      "Be glad of thy chosen path. It is, after all, thine.",
-      "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
-      "Deep roots are not reached by the frost",
-      "🎵 有你陪喝醉了又何妨 🎵",
-      "If the Sun refuses to shine, we will be the Sun.",
-      "Whiskey neat, Coffee black, Bed at three",
-    ];
-    const randInd = Math.floor(Math.random() * quotes.length);
-    setRandomQuote(
-      quotes[randInd]
+  const [randomQuoteIndex, setRandomQuoteIndex] = useState(0);
+  const quotes = [
+    "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving.",
+    "Be glad of thy chosen path. It is, after all, thine.",
+    "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
+    "Deep roots are not reached by the frost",
+    "🎵 有你陪喝醉了又何妨 🎵",
+    "If the Sun refuses to shine, we will be the Sun.",
+    "Whiskey neat, Coffee black, Bed at three",
+  ];
+
+  const getNewQuote = () => {
+    let randInd = 0;
+    while((randInd = Math.floor(Math.random() * quotes.length)) == randomQuoteIndex);
+    setRandomQuoteIndex(
+      randInd
     );
+  }
+
+  useEffect(() => {
+    getNewQuote();
   }, []);
 
   return (
@@ -56,9 +62,14 @@ export default function Home() {
             </Fade>
           </h1>
           <Fade delay={850} triggerOnce>
-            <p className={utilStyles.quote}>
-              {randomQuote}
-            </p>
+            <div className={styles.quoteContainer}>
+              <p className={utilStyles.quote}>
+                {quotes[randomQuoteIndex]}
+              </p>
+              <button className={styles.reloadButton} onClick={getNewQuote}>
+                <FontAwesomeIcon icon={faSync} />
+              </button>
+            </div>
           </Fade>
         </Fade>
         <Zoom delay={800} triggerOnce>

@@ -113,3 +113,21 @@
     min-width: 45vw;
   }
 }
+
+.quoteContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reloadButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #666;
+}
+
+.reloadButton:hover {
+  color: #0070f3;
+}
