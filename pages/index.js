@@ -15,12 +15,12 @@ import { faBook, faBriefcase, faGraduationCap, faLocationDot, faSync } from '@fo
 export default function Home() {
   const [randomQuoteIndex, setRandomQuoteIndex] = useState(0);
   const quotes = [
-    "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving.",
-    "Be glad of thy chosen path. It is, after all, thine.",
+    "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving",
+    "Be glad of thy chosen path. It is, after all, thine",
     "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
     "Deep roots are not reached by the frost",
-    "🎵 有你陪喝醉了又何妨 🎵",
-    "If the Sun refuses to shine, we will be the Sun.",
+    "Miles to go before I sleep",
+    "If the Sun refuses to shine, we will be the Sun",
     "Whiskey neat, Coffee black, Bed at three",
   ];
 
