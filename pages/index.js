@@ -15,13 +15,14 @@ import { faBook, faBriefcase, faGraduationCap, faLocationDot, faSync } from '@fo
 export default function Home() {
   const [randomQuoteIndex, setRandomQuoteIndex] = useState(0);
   const quotes = [
-    "I wish thee every possible fortune. Health, wealth, love, and above all, problems worth solving",
+    "Even the waves of fate can break upon the shores of will",
     "Be glad of thy chosen path. It is, after all, thine",
     "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
     "Deep roots are not reached by the frost",
     "Miles to go before I sleep",
     "If the Sun refuses to shine, we will be the Sun",
     "Whiskey neat, Coffee black, Bed at three",
+    "Qué horas son, mi corazón?",
   ];
 
   const getNewQuote = () => {
@@ -48,7 +49,7 @@ export default function Home() {
         <Fade triggerOnce>
           <Image
             priority
-            src="/images/headshot2.jpg"
+            src="/images/headshot.jpg"
             className={utilStyles.borderCircle}
             height={184}
             width={184}
