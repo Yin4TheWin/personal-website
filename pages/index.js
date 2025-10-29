@@ -21,8 +21,9 @@ export default function Home() {
     "Deep roots are not reached by the frost",
     "Miles to go before I sleep",
     "If the Sun refuses to shine, we will be the Sun",
+    "Be someone worth being",
     "Whiskey neat, Coffee black, Bed at three",
-    "Qué horas son, mi corazón?",
+    "¿Qué horas son, mi corazón?"
   ];
 
   const getNewQuote = () => {
