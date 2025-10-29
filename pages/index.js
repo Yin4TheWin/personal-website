@@ -13,7 +13,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faBook, faBriefcase, faGraduationCap, faLocationDot, faSync } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
-  const [randomQuoteIndex, setRandomQuoteIndex] = useState(0);
+  const [randomQuoteIndex, setRandomQuoteIndex] = useState(0); // Placeholder
   const quotes = [
     "Even the waves of fate can break upon the shores of will",
     "Be glad of thy chosen path. It is, after all, thine",
@@ -26,16 +26,33 @@ export default function Home() {
     "¿Qué horas son, mi corazón?"
   ];
 
+  const [seenIndices, setSeenIndices] = useState(new Set());
+
   const getNewQuote = () => {
-    let randInd = 0;
-    while((randInd = Math.floor(Math.random() * quotes.length)) == randomQuoteIndex);
-    setRandomQuoteIndex(
-      randInd
-    );
+    if (seenIndices.size === quotes.length) {
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * quotes.length);
+      } while (newIndex === randomQuoteIndex && quotes.length > 1); 
+
+      setRandomQuoteIndex(newIndex);
+      setSeenIndices(new Set([newIndex]));
+
+    } else {
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * quotes.length);
+      } while (seenIndices.has(newIndex));
+
+      setRandomQuoteIndex(newIndex);
+      setSeenIndices(prevSeen => new Set(prevSeen).add(newIndex));
+    }
   }
 
   useEffect(() => {
-    getNewQuote();
+    const firstIndex = Math.floor(Math.random() * quotes.length);
+    setRandomQuoteIndex(firstIndex);
+    setSeenIndices(new Set([firstIndex]));
   }, []);
 
   return (
