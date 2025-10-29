@@ -13,13 +13,13 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faBook, faBriefcase, faGraduationCap, faLocationDot, faSync } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
-  const [randomQuoteIndex, setRandomQuoteIndex] = useState(0); // Placeholder
+  const [randomQuoteIndex, setRandomQuoteIndex] = useState(0);
   const quotes = [
     "Even the waves of fate can break upon the shores of will",
     "Be glad of thy chosen path. It is, after all, thine",
     "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
     "Deep roots are not reached by the frost",
-    "Miles to go before I sleep",
+    "And miles to go before I sleep",
     "If the Sun refuses to shine, we will be the Sun",
     "Be someone worth being",
     "Whiskey neat, Coffee black, Bed at three",
