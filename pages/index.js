@@ -21,7 +21,7 @@ export default function Home() {
     "Deep roots are not reached by the frost",
     "And miles to go before I sleep",
     "If the Sun refuses to shine, we will be the Sun",
-    "Somtimes, through the noise of its thoughts, it hears the universe",
+    "Sometimes, through the noise of its thoughts, it hears the universe",
     "Whiskey neat, Coffee black, Bed at three",
     "¿Qué horas son, mi corazón?"
   ];
