@@ -19,11 +19,12 @@ export default function Home() {
     "Be glad of thy chosen path. It is, after all, thine",
     "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
     "Deep roots are not reached by the frost",
-    "And miles to go before I sleep",
+    "Miles to go before I sleep",
     "If the Sun refuses to shine, we will be the Sun",
     "Sometimes, through the noise of its thoughts, it hears the universe",
     "Whiskey neat, Coffee black, Bed at three",
-    "¿Qué horas son, mi corazón?"
+    "¿Qué horas son, mi corazón?",
+    "我愿……张开双手变成翅膀守护你"
   ];
 
   const [seenIndices, setSeenIndices] = useState(new Set());
