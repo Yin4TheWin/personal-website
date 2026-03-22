@@ -15,6 +15,7 @@ import { faBook, faBriefcase, faGraduationCap, faLocationDot, faSync } from '@fo
 export default function Home() {
   const [randomQuoteIndex, setRandomQuoteIndex] = useState(0);
   const quotes = [
+    "The bee, of course, flies anyway",
     "Even the waves of fate can break upon the shores of will",
     "Be glad of thy chosen path. It is, after all, thine",
     "如果有来生, 我还是会选择和你在一起报税、开洗衣店。",
@@ -51,7 +52,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const firstIndex = Math.floor(Math.random() * quotes.length);
+    const firstIndex = 0;
     setRandomQuoteIndex(firstIndex);
     setSeenIndices(new Set([firstIndex]));
   }, []);
@@ -68,7 +69,7 @@ export default function Home() {
         <Fade triggerOnce>
           <Image
             priority
-            src="/images/headshot.jpg"
+            src="/images/headshot6.jpg"
             className={utilStyles.borderCircle}
             height={184}
             width={184}
