@@ -63,13 +63,13 @@ export default function Home() {
         <title>Franklin Yin</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Hello! I'm Franklin, a student and software engineer. Welcome to my little island on the Internet!" />
-        <meta name="og:image" content="/images/headshot2.jpg" />
+        <meta name="og:image" content="/images/headshot.jpg" />
       </Head>
       <header className={styles.header}>
         <Fade triggerOnce>
           <Image
             priority
-            src="/images/headshot6.jpg"
+            src="/images/headshot.jpg"
             className={utilStyles.borderCircle}
             height={184}
             width={184}
