@@ -125,7 +125,7 @@ export default function Home() {
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faBook} size="lg" className={styles.icon} />
-                  <span>Currently Reading: <i>Careless People</i>, by Sarah Wynn-Williams</span>
+                  <span>Currently Reading: <i>Mistborn</i>, by Brandon Sanderson</span>
                 </li>
               </ul>
             </div>
