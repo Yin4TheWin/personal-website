@@ -60,7 +60,10 @@ export default function Projects({ projects, categories }) {
   }, [filteredProjects]);
 
   const renderProjectCard = (project) => {
-    const isDeprecated = project.deprecated || project.tags?.includes('deprecated');
+    const isDeprecated = Boolean(
+      project.deprecated || project.tags?.includes('deprecated')
+    );
+    const isFeatured = Boolean(project.featured && !isDeprecated);
 
     return (
       <a
@@ -68,7 +71,7 @@ export default function Projects({ projects, categories }) {
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        className={styles.projectCard}
+        className={`${styles.projectCard} ${isFeatured ? styles.featuredCard : ''}`}
       >
         <div className={styles.imageWrapper}>
           <Image
@@ -84,6 +87,9 @@ export default function Projects({ projects, categories }) {
         <div className={styles.cardBody}>
           <div className={styles.titleRow}>
             <h2 className={styles.projectTitle}>{project.title}</h2>
+            {isFeatured && (
+              <span className={styles.featuredPill}>👑 Featured! 👑</span>
+            )}
             {isDeprecated && (
               <span className={styles.deprecatedPill}>Deprecated</span>
             )}
@@ -131,6 +137,9 @@ export default function Projects({ projects, categories }) {
       <Fade triggerOnce>
         <section className={styles.headerSection}>
           <h1 className={utilStyles.headingLg}>Cool Projects</h1>
+          <p className={styles.pageDescription}>
+            Websites/Apps I&apos;ve made in my free time which I think are cool enough to share with the world. Cool = one of fun or useful
+          </p>
           <p className={`${utilStyles.xs} ${styles.subnav}`}>
             <Link href="/">Back to Home</Link> | <Link href="/blog">My Blog</Link> |{' '}
             <a
@@ -157,9 +166,6 @@ export default function Projects({ projects, categories }) {
               </select>
               <span className={utilStyles.selectArrow}>▼</span>
             </span>
-          </p>
-          <p className={styles.pageDescription}>
-            Websites/Apps I&apos;ve made in my free time which I think are cool enough to share with the world. Cool = one of fun or useful
           </p>
         </section>
 
