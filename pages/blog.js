@@ -33,7 +33,7 @@ export default function Blog({ postsData }) {
           <section>
             <h1 className={utilStyles.headingLg}>Blog Posts</h1>
             <p className={utilStyles.xs}>
-              <Link href="/">Back to home</Link> | <Link href={`/posts/${randomPost}`}>Random post</Link> |
+              <Link href="/">Back to home</Link> | <Link href="/projects">Cool Projects</Link> | <Link href={`/posts/${randomPost}`}>Random post</Link> |
               Filter by: {' '}
               <span className={utilStyles.selectContainer}>
                 <select

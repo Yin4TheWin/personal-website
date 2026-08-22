@@ -73,6 +73,7 @@ export default function Home() {
             className={utilStyles.borderCircle}
             height={184}
             width={184}
+            style={{ objectFit: 'cover' }}
             alt="Franklin Yin"
           />
         </Fade>
@@ -100,7 +101,13 @@ export default function Home() {
               <h2>Quick Links</h2>
               <ul>
                 <li><Link href="/blog">My Blog</Link></li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Yin4TheWin">Cool Projects</a></li>
+                <li>
+                  <Link href="/projects" className={styles.coolProjectsLink}>
+                    <span className={styles.sparkleLeft} aria-hidden="true">✨</span>
+                    <span>Cool Projects</span>
+                    <span className={styles.sparkleRight} aria-hidden="true">✨</span>
+                  </Link>
+                </li>
                 <li><a href="https://docs.franklinyin.com/">Documentation</a></li>
               </ul>
             </div>
