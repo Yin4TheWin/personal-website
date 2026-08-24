@@ -86,18 +86,25 @@ export default function Projects({ projects, categories }) {
 
         <div className={styles.cardBody}>
           <div className={styles.titleRow}>
-            <h2 className={styles.projectTitle}>{project.title}</h2>
-            {isFeatured && (
-              <span className={styles.featuredPill}>👑 Featured! 👑</span>
-            )}
-            {isDeprecated && (
-              <span className={styles.deprecatedPill}>Deprecated</span>
-            )}
-            <FontAwesomeIcon
-              icon={faArrowUpRightFromSquare}
-              className={styles.linkIcon}
-              aria-hidden="true"
-            />
+            <div className={styles.titleGroup}>
+              <h2 className={styles.projectTitle}>{project.title}</h2>
+              {project.year && (
+                <span className={styles.yearBadge}>{project.year}</span>
+              )}
+            </div>
+            <div className={styles.statusGroup}>
+              {isFeatured && (
+                <span className={styles.featuredPill}>👑 Featured! 👑</span>
+              )}
+              {isDeprecated && (
+                <span className={styles.deprecatedPill}>Deprecated</span>
+              )}
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className={styles.linkIcon}
+                aria-hidden="true"
+              />
+            </div>
           </div>
 
           {project.pitch && (

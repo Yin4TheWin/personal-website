@@ -133,6 +133,12 @@
   border: 1px solid rgba(168, 85, 247, 0.35);
 }
 
+.featuredCard .yearBadge {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #f1f5f9;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .imageWrapper {
   position: relative;
   width: 100%;
@@ -165,6 +171,33 @@
   justify-content: space-between;
   gap: 8px;
   margin-bottom: 4px;
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.statusGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.yearBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background-color: rgba(100, 116, 139, 0.12);
+  color: #475569;
+  border: 1px solid rgba(100, 116, 139, 0.25);
+  letter-spacing: 0.02rem;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .projectTitle {
