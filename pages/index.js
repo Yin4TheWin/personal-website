@@ -108,6 +108,7 @@ export default function Home() {
                     <span className={styles.sparkleRight} aria-hidden="true">✨</span>
                   </Link>
                 </li>
+                <li><a href="https://compendium.franklinyin.com">Compendium 📖</a></li>
                 <li><a href="https://docs.franklinyin.com/">Documentation</a></li>
               </ul>
             </div>
